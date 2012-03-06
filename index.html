@@ -15,7 +15,7 @@ txt+= "<p>Platform: " + navigator.platform + "</p>";
 txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
 
 document.getElementById("example").innerHTML=txt;
-$.getJSON("http://discussion.academyart.edu/serverStatus.do"),function(data) {
+$.getJSON("http://discussion.academyart.edu/serverStatus.do",function(data) {
 	alert(data);
 });
 </script>
